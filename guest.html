@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+<main class="main-content">
+  <header class="header sidebar">
+     <div class="header-logo">
+     <h1><a href="#">Birthday Guest Manager</a></h1>
+     </div>
+     <nav>
+        <ul>
+        <li><a href="index.html"><svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg> Home</a></li>
+        <li><a href="guest.html"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg> Guests</a></li>
+        </ul>
+     </nav>
+  </header>
+
+  <section class="content-wrapper guests-page">
+   <form class="add-guests">
+     <div class="inputs-wrap">
+     <p>
+       <label for="name">Name</label>
+       <input type="text" id="name" required>
+       <svg class="icon icon-checkmark-outline hidden success"><use xlink:href="#icon-checkmark-outline"></use></svg>
+       <svg class="icon icon-close-outline hidden fail"><use xlink:href="#icon-close-outline"></use></svg>
+      </p>
+     <p>
+       <label for="location">Location</label>
+       <input type="text" id="location" required>
+       <svg class="icon icon-checkmark-outline hidden success"><use xlink:href="#icon-checkmark-outline"></use></svg>
+       <svg class="icon icon-close-outline hidden fail"><use xlink:href="#icon-close-outline"></use></svg>
+      </p>
+      </div>
+       <p class="addguests-btn-wrap">
+       <button class="add-guests-btn btn btn-primary" disabled>Add Guests</button>
+       </p>
+   </form> 
+
+   <table class="guests-list table">
+   <thead>
+    <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Location</th>
+    <th scope="col" class='date-table-data'>Date added</th>
+    <th scope="col">Actions</th>
+    </tr>
+   </thead>
+   <tbody>
+   </tbody>
+   </table>
+  </section>
+</main>
+  <div class="row setupbirthday-page hidden">
+   <div class="logo">
+      <h1>Birthday Guests Manager</h1>
+   </div>
+   <form class="setup-birthday">
+     <p>
+       <label for="birthday-date">Birthday Date</label>
+       <input type="date" id="birthday-date" required>
+       <svg class="icon icon-checkmark-outline hidden success"><use xlink:href="#icon-checkmark-outline"></use></svg>
+       <svg class="icon icon-close-outline hidden fail"><use xlink:href="#icon-close-outline"></use></svg>
+       </p>
+     <p>
+       <label for="expected-guests">Expected Guests</label>
+       <input type="number" id="expected-guests" required>
+       <svg class="icon icon-checkmark-outline hidden success"><use xlink:href="#icon-checkmark-outline"></use></svg>
+       <svg class="icon icon-close-outline hidden fail"><use xlink:href="#icon-close-outline"></use></svg>
+       </p>
+       <p class="setup-btn-wrap">
+       <button class="setup-birthday-btn btn btn-primary" disabled>Set up Birthday</button>
+       </p>
+   </form> 
+   </div>
+   <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-close-outline" viewBox="0 0 20 20">
+<title>close-outline</title>
+<path d="M2.93 17.070c-1.884-1.821-3.053-4.37-3.053-7.193 0-5.523 4.477-10 10-10 2.823 0 5.372 1.169 7.19 3.050l0.003 0.003c1.737 1.796 2.807 4.247 2.807 6.947 0 5.523-4.477 10-10 10-2.7 0-5.151-1.070-6.95-2.81l0.003 0.003zM4.34 15.66c1.449 1.449 3.45 2.344 5.66 2.344 4.421 0 8.004-3.584 8.004-8.004 0-2.21-0.896-4.211-2.344-5.66v0c-1.449-1.449-3.45-2.344-5.66-2.344-4.421 0-8.004 3.584-8.004 8.004 0 2.21 0.896 4.211 2.344 5.66v0zM14.24 7.17l-2.83 2.83 2.83 2.83-1.41 1.41-2.83-2.83-2.83 2.83-1.41-1.41 2.83-2.83-2.83-2.83 1.41-1.41 2.83 2.83 2.83-2.83 1.41 1.41z"></path>
+</symbol>
+
+<symbol id="icon-checkmark-outline" viewBox="0 0 20 20">
+<title>checkmark-outline</title>
+<path d="M2.93 17.070c-1.884-1.821-3.053-4.37-3.053-7.193 0-5.523 4.477-10 10-10 2.823 0 5.372 1.169 7.19 3.050l0.003 0.003c1.737 1.796 2.807 4.247 2.807 6.947 0 5.523-4.477 10-10 10-2.7 0-5.151-1.070-6.95-2.81l0.003 0.003zM15.66 15.66c1.449-1.449 2.344-3.45 2.344-5.66 0-4.421-3.584-8.004-8.004-8.004-2.21 0-4.211 0.896-5.66 2.344v0c-1.449 1.449-2.344 3.45-2.344 5.66 0 4.421 3.584 8.004 8.004 8.004 2.21 0 4.211-0.896 5.66-2.344v0zM6.7 9.29l2.3 2.31 4.3-4.3 1.4 1.42-5.7 5.68-3.7-3.7 1.4-1.42z"></path>
+</symbol>
+<symbol id="icon-users" viewBox="0 0 36 32">
+<title>users</title>
+<path d="M24 24.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+<path d="M10.225 24.854c1.728-1.13 3.877-1.989 6.243-2.513-0.47-0.556-0.897-1.176-1.265-1.844-0.95-1.726-1.453-3.627-1.453-5.497 0-2.689 0-5.228 0.956-7.305 0.928-2.016 2.598-3.265 4.976-3.734-0.529-2.39-1.936-3.961-5.682-3.961-6 0-6 4.029-6 9 0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h8.719c0.454-0.403 0.956-0.787 1.506-1.146z"></path>
+</symbol>
+<symbol id="icon-home3" viewBox="0 0 32 32">
+<title>home3</title>
+<path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
+</symbol>
+</defs>
+</svg>
+    <script src="main.js"></script>
+</body>
+</html>
